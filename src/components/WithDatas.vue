@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Component com Dadaos</h1>
-    <p>Nome: Caneta - #123</p>
+    <p>Nome: {{ productName }} {{ code }}</p>
   </div>
 </template>
 
@@ -14,6 +14,19 @@ div {
   margin: 30px;
   padding: 10px;
 }
+p {
+  font-size: 1.2rem;
+}
 </style>
 
-<script></script>
+<script>
+// optional API
+export default {
+  data: function () {
+    return {
+      productName: 'caderrno',
+      code: '#321',
+    }
+  },
+}
+</script>
